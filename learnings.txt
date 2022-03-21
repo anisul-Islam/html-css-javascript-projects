@@ -1,0 +1,19 @@
+// todo app
+- html
+- css
+- js
+  - setTimeOut
+  - localStorage
+  - array
+  - mapping 
+  - dom manipulation
+  - event listeners
+
+step 1 : create the html basic structure
+step 2 : style html elements
+step 3: find all the html elements and add listeners
+step 4: add todo
+step 5: showMessage
+step 6: adding todos in localstorage
+step 7: delete Todo 
+setp 8: read todo 
