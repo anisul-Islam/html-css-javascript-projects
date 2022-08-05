@@ -1,0 +1,117 @@
+/* reset code & common code starts  */
+* {
+  border: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  outline: non;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #4a148c;
+  --color-primary-light: #7c43bd;
+  --color-primary-dark: #12005e;
+  --color-secondary: #fff;
+  --color-secondary-light: #fff;
+  --color-secondary-dark: #ccc;
+  --color-black: #000;
+  --color-warning: orange;
+  --transition: all 0.3s ease;
+  --container-lg-width: 80%;
+  --container-md-width: 90%;
+  --container-sm-width: 95%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  /* border-radius: 0.6rem; */
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* reset code & common code ends  */
+.cards {
+  /* background-color: var(--color-primary-light); */
+  padding: 1rem 0;
+}
+section .title {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+.cards__container {
+  width: var(--container-lg-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.card {
+  background-color: var(--color-secondary-dark);
+  transition: var(--transition);
+  min-height: 30rem;
+  border-radius: 0.5rem;
+}
+.card:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.card__img {
+  height: 15rem;
+}
+.card__body {
+  padding: 2rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card__title {
+  margin-bottom: 0.6rem;
+}
+.card__desc {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cards__container {
+    width: var(--container-md-width);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards__container {
+    width: var(--container-sm-width);
+    grid-template-columns: auto;
+  }
+}
