@@ -1,0 +1,62 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: white;
+  background: #1f2641;
+}
+
+.faqs {
+  padding: 1rem 5rem;
+}
+.faqs h2 {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  font-size: 2rem;
+}
+.faqs__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.faq {
+  display: flex;
+  align-items: center;
+  background-color: #6c63ff;
+  padding: 2.5rem;
+}
+.faq__icon {
+  margin-right: 2rem;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+.faq__desc {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .faqs__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}
