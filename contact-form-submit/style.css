@@ -1,0 +1,91 @@
+/* css variables */
+:root {
+  --primary-color: #3c3c3c;
+  --primary-color-dark: #1c1c1c;
+  --primary-color-light: #5c5c5c;
+  --warning-color: orange;
+  --text-color: #fff;
+
+  --border-radius: 0.6rem;
+  --transition: all 0.4s ease-in-out;
+}
+
+/* reset code  */
+* {
+  border: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact {
+  padding: 2rem 4rem;
+  background-color: #1c1c1c;
+  height: 100vh;
+  color: var(--text-color);
+  display: grid;
+  place-items: center;
+}
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.contact__form {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  width: 50%;
+}
+
+.contact__field {
+  margin-bottom: 2rem;
+  display: grid;
+}
+.contact__field:nth-last-child() {
+  margin-bottom: 2rem;
+  display: grid;
+}
+
+.contact__field label {
+  margin-bottom: 0.5rem;
+}
+.contact__field input,
+textarea,
+button {
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+}
+.contact__form textarea {
+  resize: none;
+  height: 25vh;
+}
+
+.contact__field-btn {
+  justify-self: center;
+  width: 50%;
+  background-color: var(--primary-color-dark);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+.contact__field-btn:hover {
+  background-color: var(--warning-color);
+}
+
+@media (max-width: 768px) {
+  .contact__form {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .contact__form {
+    width: 100%;
+  }
+}
